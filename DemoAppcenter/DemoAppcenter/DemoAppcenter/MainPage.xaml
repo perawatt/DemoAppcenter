@@ -8,5 +8,9 @@
            VerticalOptions="Center" 
            HorizontalOptions="Center" 
            TextColor="Red"/>
+    <Label Text="Test on iOS" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" 
+           TextColor="Blue"/>
 
 </ContentPage>
