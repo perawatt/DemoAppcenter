@@ -4,13 +4,17 @@
              xmlns:local="clr-namespace:DemoAppcenter"
              x:Class="DemoAppcenter.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" 
-           TextColor="Red"/>
-    <Label Text="Test on iOS" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" 
-           TextColor="Blue"/>
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="Model Name !" 
+           TextColor="Red"
+           x:Name="ModelID"/>
+        <Label Text="Device ID !" 
+           TextColor="Blue"           
+           x:Name="DeviceID"/>
+        <Label Text="PlatformOS !" 
+           TextColor="Green"
+           x:Name="PlatformOS"/>
+    </StackLayout>
+
 
 </ContentPage>
