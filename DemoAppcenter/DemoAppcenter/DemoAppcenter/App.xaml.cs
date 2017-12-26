@@ -9,9 +9,15 @@ namespace DemoAppcenter
 {
 	public partial class App : Application
 	{
-		public App ()
+        public static App Instant;
+
+        public App ()
 		{
-			InitializeComponent();
+            if (Instant == null)
+            {
+                Instant = this;
+            }
+            InitializeComponent();
 
 			MainPage = new DemoAppcenter.MainPage();
 		}
